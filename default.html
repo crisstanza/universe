@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>the universe</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/css.css"></style>
+		<script src="js/js.js"></script>
+	</head>
+	<body>
+		<div class="main_screen">
+			<div class="canvas">
+				<canvas id="main_canvas" class="canvas" width="640" height="480"></canvas>
+			</div>
+			<div class="control_panel">
+				<form name="form_axis">
+					<input type="checkbox" name="axis_2d" value="true" checked="checked" /> 2d axis
+					&nbsp;
+					<input type="radio" name="axis_2d_color" value="#F00" checked="checked" /> red
+					&nbsp;
+					<input type="radio" name="axis_2d_color" value="#0F0" /> green
+					&nbsp;
+					<input type="radio" name="axis_2d_color" value="#00F" /> blue
+					<div class="sep"></div>
+					<input type="checkbox" name="axis_3d" value="true" /> 3d axis
+					&nbsp;
+					<input type="radio" name="axis_3d_color" value="#F00" /> red
+					&nbsp;
+					<input type="radio" name="axis_3d_color" value="#0F0" /> green
+					&nbsp;
+					<input type="radio" name="axis_3d_color" value="#00F" checked="checked" /> blue
+				</form>
+			</div>
+			<div class="control_panel">
+				<form name="form_2d">
+					<input type="text" name="p_x" class="field_digit" value="0" /> <input type="text" name="p_y" class="field_digit" value="0" />
+					<button>draw point 2d</button>
+					<div class="sep"></div>
+					<input type="text" name="p1_x" class="field_digit" value="0" /> <input type="text" name="p1_y" class="field_digit" value="0" /><br />
+					<input type="text" name="p2_x" class="field_digit" value="0" /> <input type="text" name="p2_x" class="field_digit" value="0" />
+					<button>draw line 2d</button><br />
+				</form>
+			</div>
+			<div class="control_panel control_panel_last">
+				<form name="form_3d">
+					<input type="text" name="p_x" class="field_digit" value="0" /> <input type="text" name="p_y" class="field_digit" value="0" /> <input type="text" name="p_z" class="field_digit" value="0" />
+					<button>draw point 3d</button>
+					<div class="sep"></div>
+					<input type="text" name="p1_x" class="field_digit" value="0" /> <input type="text" name="p1_y" class="field_digit" value="0" /> <input type="text" name="p1_z" class="field_digit" value="0" /><br />
+					<input type="text" name="p2_x" class="field_digit" value="0" /> <input type="text" name="p2_y" class="field_digit" value="0" /> <input type="text" name="p2_z" class="field_digit" value="0" />
+					<button>draw line 3d</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
