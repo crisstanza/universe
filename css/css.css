@@ -6,7 +6,7 @@ body {
 	background-color: #EEE;
 	border: 1px solid #444;
 	padding: 10px;
-	width: 884px; /* canvas.width + 2 + x */
+	width: 924px; /* canvas.width + 2 + x */
 	height: 482px; /* canvas.height + 2 */
 }
 
@@ -31,11 +31,11 @@ div.control_panel {
 	padding: 10px;
 	padding-bottom: 8px;
 	margin-left: 10px;
-	width: 210px;
+	width: 250px;
 }
 
 div.control_panel > form > div.sep {
-	height: 5px;
+	height: 6px;
 }
 
 
@@ -45,7 +45,7 @@ div.control_panel > form > div.sep {
 
 body {
 	font-family: Verdana;
-	font-size: 0.8em;
+	font-size: 0.7em;
 }
 
 
