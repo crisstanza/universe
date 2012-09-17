@@ -12,32 +12,38 @@
 				<canvas id="main_canvas" class="canvas" width="640" height="480"></canvas>
 			</div>
 			<div class="control_panel">
-				<input type="checkbox" id="cb_2d_axis" value="true" checked="checked" /> 2d axis
-				&nbsp; &nbsp; &nbsp; &nbsp;
-				<input type="checkbox" id="cb_3d_axis" value="true" /> 3d axis
-				<div class="sep"></div>
-				<input type="radio" checked="checked" id="color" /> red
-				&nbsp; &nbsp;
-				<input type="radio" id="color" /> green
-				&nbsp; &nbsp;
-				<input type="radio" id="color" /> blue
+				<form name="form_axis">
+					<input type="checkbox" name="axis_2d" value="true" checked="checked" /> 2d axis
+					&nbsp; &nbsp; &nbsp; &nbsp;
+					<input type="checkbox" name="axis_3d" value="true" /> 3d axis
+					<div class="sep"></div>
+					<input type="radio" name="axis_color" value="0" checked="checked" /> red
+					&nbsp; &nbsp;
+					<input type="radio" name="axis_color" value="1" /> green
+					&nbsp; &nbsp;
+					<input type="radio" name="axis_color" value="2" /> blue
+				</form>
 			</div>
 			<div class="control_panel">
-				<input type="text" id="x_2d" class="field_digit" value="0" /> <input type="text" id="y_2d" class="field_digit" value="0" />
-				<button>draw point 2d</button>
-				<div class="sep"></div>
-				<input type="text" id="x_2d" class="field_digit" value="0" /> <input type="text" id="y_2d" class="field_digit" value="0" /><br />
-				<input type="text" id="x_2d" class="field_digit" value="0" /> <input type="text" id="y_2d" class="field_digit" value="0" />
-				<button>draw line 2d</button><br />
+				<form name="form_2d">
+					<input type="text" name="p_x" class="field_digit" value="0" /> <input type="text" name="p_y" class="field_digit" value="0" />
+					<button>draw point 2d</button>
+					<div class="sep"></div>
+					<input type="text" name="p1_x" class="field_digit" value="0" /> <input type="text" name="p1_y" class="field_digit" value="0" /><br />
+					<input type="text" name="p2_x" class="field_digit" value="0" /> <input type="text" name="p2_x" class="field_digit" value="0" />
+					<button>draw line 2d</button><br />
+				</form>
 			</div>
 			<div class="control_panel control_panel_last">
-				<input type="text" id="x_3d" class="field_digit" value="0" /> <input type="text" id="y_3d" class="field_digit" value="0" /> <input type="text" id="z_3d" class="field_digit" value="0" />
-				<button>draw point 3d</button>
-				<div class="sep"></div>
-				<input type="text" id="x_3d" class="field_digit" value="0" /> <input type="text" id="y_3d" class="field_digit" value="0" /> <input type="text" id="z_3d" class="field_digit" value="0" /><br />
-				<input type="text" id="x_3d" class="field_digit" value="0" /> <input type="text" id="y_3d" class="field_digit" value="0" /> <input type="text" id="z_3d" class="field_digit" value="0" />
-				<button>draw line 3d</button>
+				<form name="form_3d">
+					<input type="text" name="p_x" class="field_digit" value="0" /> <input type="text" name="p_y" class="field_digit" value="0" /> <input type="text" name="p_z" class="field_digit" value="0" />
+					<button>draw point 3d</button>
+					<div class="sep"></div>
+					<input type="text" name="p1_x" class="field_digit" value="0" /> <input type="text" name="p1_y" class="field_digit" value="0" /> <input type="text" name="p1_z" class="field_digit" value="0" /><br />
+					<input type="text" name="p2_x" class="field_digit" value="0" /> <input type="text" name="p2_y" class="field_digit" value="0" /> <input type="text" name="p2_z" class="field_digit" value="0" />
+					<button>draw line 3d</button>
+				</form>
 			</div>
-		<div>
+		</div>
 	</body>
 </html>

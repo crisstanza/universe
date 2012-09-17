@@ -34,7 +34,7 @@ div.control_panel {
 	width: 210px;
 }
 
-div.control_panel > div.sep {
+div.control_panel > form > div.sep {
 	height: 5px;
 }
 
